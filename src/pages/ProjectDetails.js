@@ -8,7 +8,7 @@ function ProjectDetails() {
     <>
       <h1>{project.title}</h1>
       <p>{project.description}</p>
-      <img src={project.image} alt={project.title} />
+      {/* <img src={project.image} alt={project.title} /> */}
       <button>GitHub</button>
       <button>Deployed Site</button>
     </>
