@@ -4,7 +4,6 @@ import findProject from "../utilities/findProject";
 function ProjectDetails() {
   const {projectDetails} = useParams()
   const project = findProject(projectDetails)
-  console.log(project.image);
   return (
     <>
       <h1>{project.title}</h1>
@@ -13,8 +12,12 @@ function ProjectDetails() {
         src={project.image} 
         alt={project.title} 
       />
-      <button>GitHub</button>
-      <button>Deployed Site</button>
+      <button>
+        <a href={project.repositoryLink}>GitHub</a>
+      </button>
+      <button>
+        <a href={project.deploymentLink}>Explore App</a>
+      </button>
     </>
   )
 }
