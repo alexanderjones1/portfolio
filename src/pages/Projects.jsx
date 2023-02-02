@@ -1,20 +1,12 @@
-import projects from "../data/projects"
+import Projects from "../data/Projects"
+import ProjectsList from "../components/ProjectsList"
 
-function Projects() {
+function Project() {
   return (
     <>
-      <h1>Projects</h1>
-      <section>
-        {projects.map((project, index) =>
-        <li key={index}>
-          {project.title}
-          {project.image}
-          <button>Check if out</button>
-        </li>
-        )}
-      </section>
+      <ProjectsList projects={Projects} />
     </>
   )
 }
 
-export default Projects
+export default Project

@@ -1,4 +1,4 @@
-const projects = [
+const Projects = [
   {
     title: "connectFour",
     description: "Childhood strategy game rendered in a browser using HTML, CSS and Javascrypt",
@@ -15,4 +15,4 @@ const projects = [
   }
 ]
 
-export default projects
+export default Projects
