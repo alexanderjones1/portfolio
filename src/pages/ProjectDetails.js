@@ -4,6 +4,7 @@ import findProject from "../utilities/findProject";
 function ProjectDetails() {
   const {projectDetails} = useParams()
   const project = findProject(projectDetails)
+  console.log(project.image);
   return (
     <>
       <h1>{project.title}</h1>
